@@ -499,8 +499,12 @@
                     musicStarted = true;
                 }
             }
-            document.addEventListener("click", startMusic);
-            document.addEventListener("touchstart", startMusic);
+            document.body.addEventListener("touchstart", () => {
+                if (!musicStarted) {
+                    music.play().catch(() => {});
+                    musicStarted = true;
+                }
+            }, { once: true });
 
             // Heart trail
             function createHeart(x, y) {
@@ -585,3 +589,4 @@
 
 </body>
 </html>
+
