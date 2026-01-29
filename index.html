@@ -1,587 +1,586 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Happy 17th Birthday, Sabhyata 🎀</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>Happy 17th Birthday, Sabhyata 🎀</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: "Poppins", sans-serif;
-        }
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
 
-        body {
-            background: linear-gradient(135deg, #ffd6e8, #ffe9f5, #fff5fb);
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            overflow-x: hidden;
-            position: relative;
-        }
+body {
+    background: linear-gradient(135deg, #ffd6e8, #ffe9f5, #fff5fb);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+    position: relative;
+}
 
-        .container {
-            text-align: center;
-            padding: 20px;
-            max-width: 480px;
-            background: rgba(255, 255, 255, 0.9);
-            border-radius: 24px;
-            box-shadow: 0 12px 30px rgba(255, 105, 180, 0.25);
-            border: 2px solid #ffb6d9;
-            position: relative;
-            z-index: 2;
-        }
+.container {
+    text-align: center;
+    padding: 20px;
+    max-width: 480px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 24px;
+    box-shadow: 0 12px 30px rgba(255, 105, 180, 0.25);
+    border: 2px solid #ffb6d9;
+    position: relative;
+    z-index: 2;
+}
 
-        /* Sparkles */
-        .sparkle {
-            position: absolute;
-            width: 6px;
-            height: 6px;
-            background: white;
-            border-radius: 50%;
-            box-shadow: 0 0 8px white;
-            animation: sparkleMove 4s linear infinite;
-            opacity: 0.8;
-        }
+/* Sparkles */
+.sparkle {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0 0 8px white;
+    animation: sparkleMove 4s linear infinite;
+    opacity: 0.8;
+}
 
-        @keyframes sparkleMove {
-            0% { transform: translateY(0) scale(1); opacity: 0; }
-            20% { opacity: 1; }
-            100% { transform: translateY(-120vh) scale(1.5); opacity: 0; }
-        }
+@keyframes sparkleMove {
+    0% { transform: translateY(0) scale(1); opacity: 0; }
+    20% { opacity: 1; }
+    100% { transform: translateY(-120vh) scale(1.5); opacity: 0; }
+}
 
-        /* Hello Kitty */
-        .hello-kitty {
-            width: 160px;
-            height: 160px;
-            margin: 0 auto 10px;
-            position: relative;
-        }
+/* Hello Kitty */
+.hello-kitty {
+    width: 160px;
+    height: 160px;
+    margin: 0 auto 10px;
+    position: relative;
+}
 
-        .kitty-shadow {
-            position: absolute;
-            width: 120px;
-            height: 18px;
-            background: rgba(0, 0, 0, 0.08);
-            border-radius: 50%;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            filter: blur(3px);
-        }
+.kitty-shadow {
+    position: absolute;
+    width: 120px;
+    height: 18px;
+    background: rgba(0, 0, 0, 0.08);
+    border-radius: 50%;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    filter: blur(3px);
+}
 
-        .kitty-face {
-            width: 150px;
-            height: 120px;
-            background: #fff;
-            border-radius: 60px;
-            border: 3px solid #000;
-            position: absolute;
-            top: 18px;
-            left: 5px;
-        }
+.kitty-face {
+    width: 150px;
+    height: 120px;
+    background: #fff;
+    border-radius: 60px;
+    border: 3px solid #000;
+    position: absolute;
+    top: 18px;
+    left: 5px;
+}
 
-        .kitty-ear {
-            width: 40px;
-            height: 40px;
-            background: #fff;
-            border: 3px solid #000;
-            position: absolute;
-            top: 5px;
-            border-radius: 10px;
-        }
+.kitty-ear {
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border: 3px solid #000;
+    position: absolute;
+    top: 5px;
+    border-radius: 10px;
+}
 
-        .ear-left { left: 18px; transform: rotate(-15deg); }
-        .ear-right { right: 18px; transform: rotate(15deg); }
+.ear-left { left: 18px; transform: rotate(-15deg); }
+.ear-right { right: 18px; transform: rotate(15deg); }
 
-        .kitty-eye {
-            width: 10px;
-            height: 16px;
-            background: #000;
-            border-radius: 50%;
-            position: absolute;
-            top: 60px;
-        }
+.kitty-eye {
+    width: 10px;
+    height: 16px;
+    background: #000;
+    border-radius: 50%;
+    position: absolute;
+    top: 60px;
+}
 
-        .eye-left { left: 48px; }
-        .eye-right { right: 48px; }
+.eye-left { left: 48px; }
+.eye-right { right: 48px; }
 
-        .kitty-nose {
-            width: 14px;
-            height: 10px;
-            background: #f7c04a;
-            border-radius: 50%;
-            position: absolute;
-            top: 78px;
-            left: 50%;
-            transform: translateX(-50%);
-        }
+.kitty-nose {
+    width: 14px;
+    height: 10px;
+    background: #f7c04a;
+    border-radius: 50%;
+    position: absolute;
+    top: 78px;
+    left: 50%;
+    transform: translateX(-50%);
+}
 
-        .kitty-mouth {
-            position: absolute;
-            width: 26px;
-            height: 16px;
-            border-bottom: 2px solid #000;
-            border-radius: 0 0 50px 50px;
-            top: 88px;
-            left: 50%;
-            transform: translateX(-50%);
-        }
+.kitty-mouth {
+    position: absolute;
+    width: 26px;
+    height: 16px;
+    border-bottom: 2px solid #000;
+    border-radius: 0 0 50px 50px;
+    top: 88px;
+    left: 50%;
+    transform: translateX(-50%);
+}
 
-        .blush {
-            position: absolute;
-            width: 18px;
-            height: 10px;
-            background: #ffb6c9;
-            border-radius: 50%;
-            opacity: 0.7;
-            filter: blur(1px);
-            top: 86px;
-        }
+.blush {
+    position: absolute;
+    width: 18px;
+    height: 10px;
+    background: #ffb6c9;
+    border-radius: 50%;
+    opacity: 0.7;
+    filter: blur(1px);
+    top: 86px;
+}
 
-        .blush-left { left: 32px; }
-        .blush-right { right: 32px; }
+.blush-left { left: 32px; }
+.blush-right { right: 32px; }
 
-        /* Whiskers */
-        .whisker {
-            width: 42px;
-            height: 3px;
-            background: #000;
-            position: absolute;
-            border-radius: 2px;
-        }
+/* Whiskers */
+.whisker {
+    width: 42px;
+    height: 3px;
+    background: #000;
+    position: absolute;
+    border-radius: 2px;
+}
 
-        .whisker-left-1 { left: 28px; top: 72px; transform: rotate(-5deg); }
-        .whisker-left-2 { left: 28px; top: 88px; transform: rotate(5deg); }
-        .whisker-right-1 { right: 28px; top: 72px; transform: rotate(5deg); }
-        .whisker-right-2 { right: 28px; top: 88px; transform: rotate(-5deg); }
+.whisker-left-1 { left: 28px; top: 72px; transform: rotate(-5deg); }
+.whisker-left-2 { left: 28px; top: 88px; transform: rotate(5deg); }
+.whisker-right-1 { right: 28px; top: 72px; transform: rotate(5deg); }
+.whisker-right-2 { right: 28px; top: 88px; transform: rotate(-5deg); }
 
-        .wiggle {
-            animation: whiskerWiggle 0.5s ease-in-out;
-        }
+.wiggle {
+    animation: whiskerWiggle 0.5s ease-in-out;
+}
 
-        @keyframes whiskerWiggle {
-            0% { transform: translateX(0) rotate(var(--angle)); }
-            50% { transform: translateX(3px) rotate(calc(var(--angle) + 6deg)); }
-            100% { transform: translateX(0) rotate(var(--angle)); }
-        }
+@keyframes whiskerWiggle {
+    0% { transform: translateX(0) rotate(var(--angle)); }
+    50% { transform: translateX(3px) rotate(calc(var(--angle) + 6deg)); }
+    100% { transform: translateX(0) rotate(var(--angle)); }
+}
 
-        /* Bow */
-        .kitty-bow {
-            width: 60px;
-            height: 44px;
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            animation: bowBounce 2.2s ease-in-out infinite;
-        }
+/* Bow */
+.kitty-bow {
+    width: 60px;
+    height: 44px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    animation: bowBounce 2.2s ease-in-out infinite;
+}
 
-        @keyframes bowBounce {
-            0%, 100% { transform: translateY(0) rotate(0deg); }
-            50% { transform: translateY(-3px) rotate(-3deg); }
-        }
+@keyframes bowBounce {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-3px) rotate(-3deg); }
+}
 
-        .bow-circle {
-            width: 20px;
-            height: 20px;
-            background: #ff4b8b;
-            border-radius: 50%;
-            border: 2px solid #000;
-            position: absolute;
-            top: 12px;
-            left: 20px;
-        }
+.bow-circle {
+    width: 20px;
+    height: 20px;
+    background: #ff4b8b;
+    border-radius: 50%;
+    border: 2px solid #000;
+    position: absolute;
+    top: 12px;
+    left: 20px;
+}
 
-        .bow-left, .bow-right {
-            width: 28px;
-            height: 28px;
-            background: #ff7aa8;
-            border-radius: 50%;
-            border: 2px solid #000;
-            position: absolute;
-            top: 8px;
-        }
+.bow-left, .bow-right {
+    width: 28px;
+    height: 28px;
+    background: #ff7aa8;
+    border-radius: 50%;
+    border: 2px solid #000;
+    position: absolute;
+    top: 8px;
+}
 
-        .bow-left { left: 0; }
-        .bow-right { right: 0; }
+.bow-left { left: 0; }
+.bow-right { right: 0; }
 
-        h1 {
-            font-size: 1.9rem;
-            color: #ff4b8b;
-            margin-top: 10px;
-            text-shadow: 0 0 10px rgba(255, 105, 180, 0.4);
-        }
+h1 {
+    font-size: 1.9rem;
+    color: #ff4b8b;
+    margin-top: 10px;
+    text-shadow: 0 0 10px rgba(255, 105, 180, 0.4);
+}
 
-        .sub {
-            font-size: 1.1rem;
-            color: #ff6fa8;
-            margin-top: 4px;
-        }
+.sub {
+    font-size: 1.1rem;
+    color: #ff6fa8;
+    margin-top: 4px;
+}
 
-        .age-tag {
-            display: inline-block;
-            margin-top: 10px;
-            padding: 6px 14px;
-            border-radius: 999px;
-            background: #ffe0f1;
-            color: #ff2f7b;
-            font-weight: 600;
-            border: 1px solid #ff9ac5;
-        }
+.age-tag {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 6px 14px;
+    border-radius: 999px;
+    background: #ffe0f1;
+    color: #ff2f7b;
+    font-weight: 600;
+    border: 1px solid #ff9ac5;
+}
 
-        /* Countdown */
-        .countdown-box {
-            margin-top: 12px;
-            padding: 10px;
-            background: #ffe0f1;
-            border-radius: 14px;
-            border: 1px solid #ff9ac5;
-            color: #ff2f7b;
-            font-weight: 600;
-            font-size: 1rem;
-        }
+/* Countdown */
+.countdown-box {
+    margin-top: 12px;
+    padding: 10px;
+    background: #ffe0f1;
+    border-radius: 14px;
+    border: 1px solid #ff9ac5;
+    color: #ff2f7b;
+    font-weight: 600;
+    font-size: 1rem;
+}
 
-        /* Gallery */
-        .gallery {
-            margin-top: 15px;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 10px;
-        }
+/* Gallery */
+.gallery {
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
 
-        .gallery img {
-            width: 100%;
-            height: auto;
-            border-radius: 14px;
-            border: 2px solid #ff9ac5;
-            box-shadow: 0 6px 14px rgba(255, 105, 180, 0.3);
-            object-fit: contain;
-            background: #fff;
-        }
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 14px;
+    border: 2px solid #ff9ac5;
+    box-shadow: 0 6px 14px rgba(255, 105, 180, 0.3);
+    object-fit: contain;
+    background: #fff;
+}
 
-        /* Love note */
-        .love-note {
-            margin-top: 18px;
-            padding: 12px;
-            background: #ffe6f4;
-            border-radius: 14px;
-            border: 1px solid #ff9ac5;
-            color: #ff2f7b;
-            font-size: 1.1rem;
-            font-weight: 600;
-            opacity: 0;
-            transform: translateY(10px);
-            transition: all 0.4s ease;
-        }
+/* Love note */
+.love-note {
+    margin-top: 18px;
+    padding: 12px;
+    background: #ffe6f4;
+    border-radius: 14px;
+    border: 1px solid #ff9ac5;
+    color: #ff2f7b;
+    font-size: 1.1rem;
+    font-weight: 600;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.4s ease;
+}
 
-        .love-note.show {
-            opacity: 1;
-            transform: translateY(0);
-        }
+.love-note.show {
+    opacity: 1;
+    transform: translateY(0);
+}
 
-        .btn {
-            margin-top: 18px;
-            padding: 10px 22px;
-            border-radius: 999px;
-            border: none;
-            background: linear-gradient(135deg, #ff4b8b, #ff9ac5);
-            color: #fff;
-            font-size: 1rem;
-            font-weight: 600;
-            cursor: pointer;
-            box-shadow: 0 8px 18px rgba(255, 105, 180, 0.5);
-        }
+.btn {
+    margin-top: 18px;
+    padding: 10px 22px;
+    border-radius: 999px;
+    border: none;
+    background: linear-gradient(135deg, #ff4b8b, #ff9ac5);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 8px 18px rgba(255, 105, 180, 0.5);
+}
 
-        /* Letter button */
-        .letter-box {
-            margin-top: 18px;
-            padding: 12px;
-            background: #ffe0f5;
-            border-radius: 14px;
-            border: 2px solid #ff9ac5;
-            color: #ff2f7b;
-            font-size: 1.1rem;
-            font-weight: 600;
-            cursor: pointer;
-            box-shadow: 0 6px 14px rgba(255, 105, 180, 0.3);
-        }
+/* Letter button */
+.letter-box {
+    margin-top: 18px;
+    padding: 12px;
+    background: #ffe0f5;
+    border-radius: 14px;
+    border: 2px solid #ff9ac5;
+    color: #ff2f7b;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 6px 14px rgba(255, 105, 180, 0.3);
+}
 
-        /* Letter popup */
-        .letter-popup {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(255, 200, 230, 0.7);
-            backdrop-filter: blur(6px);
-            display: none;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
-            z-index: 999;
-        }
+/* Letter popup */
+.letter-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 200, 230, 0.7);
+    backdrop-filter: blur(6px);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    z-index: 999;
+}
 
-        .letter-content {
-            background: #fff;
-            padding: 20px;
-            max-width: 90%;
-            max-height: 70%;
-            overflow-y: auto;
-            border-radius: 16px;
-            border: 2px solid #ff9ac5;
-            box-shadow: 0 8px 20px rgba(255, 105, 180, 0.4);
-            color: #ff2f7b;
-            font-size: 1.05rem;
-            line-height: 1.5rem;
-            white-space: pre-wrap;
-        }
+.letter-content {
+    background: #fff;
+    padding: 20px;
+    max-width: 90%;
+    max-height: 70%;
+    overflow-y: auto;
+    border-radius: 16px;
+    border: 2px solid #ff9ac5;
+    box-shadow: 0 8px 20px rgba(255, 105, 180, 0.4);
+    color: #ff2f7b;
+    font-size: 1.05rem;
+    line-height: 1.5rem;
+    white-space: pre-wrap;
+}
 
-        .close-letter {
-            margin-top: 12px;
-            padding: 10px 20px;
-            background: #ff7aa8;
-            color: white;
-            border: none;
-            border-radius: 12px;
-            font-weight: 600;
-            cursor: pointer;
-        }
+.close-letter {
+    margin-top: 12px;
+    padding: 10px 20px;
+    background: #ff7aa8;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-weight: 600;
+    cursor: pointer;
+}
 
-        .footer {
-            margin-top: 16px;
-            font-size: 0.85rem;
-            color: #ff8fb8;
-        }
+.footer {
+    margin-top: 16px;
+    font-size: 0.85rem;
+    color: #ff8fb8;
+}
 
-        .from {
-            margin-top: 4px;
-            font-weight: 600;
-            color: #ff4b8b;
-        }
+.from {
+    margin-top: 4px;
+    font-weight: 600;
+    color: #ff4b8b;
+}
 
-        /* Heart trail */
-        .trail-heart {
-            position: fixed;
-            font-size: 18px;
-            pointer-events: none;
-            animation: heartFade 1s ease-out forwards;
-        }
+/* Heart trail */
+.trail-heart {
+    position: fixed;
+    font-size: 18px;
+    pointer-events: none;
+    animation: heartFade 1s ease-out forwards;
+}
 
-        @keyframes heartFade {
-            0% { transform: translateY(0) scale(1); opacity: 1; }
-            100% { transform: translateY(-25px) scale(1.4); opacity: 0; }
-        }
-    </style>
+@keyframes heartFade {
+    0% { transform: translateY(0) scale(1); opacity: 1; }
+    100% { transform: translateY(-25px) scale(1.4); opacity: 0; }
+}
+</style>
 </head>
 
 <body>
 
-    <!-- Sparkles -->
-    <script>
-        for (let i = 0; i < 40; i++) {
-            const s = document.createElement("div");
-            s.className = "sparkle";
-            s.style.left = Math.random() * 100 + "%";
-            s.style.top = (Math.random() * 100 + 10) + "%";
-            s.style.animationDelay = Math.random() * 4 + "s";
-            document.body.appendChild(s);
-        }
-    </script>
+<!-- Sparkles -->
+<script>
+for (let i = 0; i < 40; i++) {
+    const s = document.createElement("div");
+    s.className = "sparkle";
+    s.style.left = Math.random() * 100 + "%";
+    s.style.top = (Math.random() * 100 + 10) + "%";
+    s.style.animationDelay = Math.random() * 4 + "s";
+    document.body.appendChild(s);
+}
+</script>
 
-    <div class="container">
+<div class="container">
 
-        <!-- Hello Kitty -->
-        <div class="hello-kitty">
-            <div class="kitty-shadow"></div>
-            <div class="kitty-face"></div>
-            <div class="kitty-ear ear-left"></div>
-            <div class="kitty-ear ear-right"></div>
+<!-- Hello Kitty -->
+<div class="hello-kitty">
+    <div class="kitty-shadow"></div>
+    <div class="kitty-face"></div>
+    <div class="kitty-ear ear-left"></div>
+    <div class="kitty-ear ear-right"></div>
+    <div class="kitty-eye eye-left"></div>
+    <div class="kitty-eye eye-right"></div>
+    <div class="kitty-nose"></div>
+    <div class="kitty-mouth"></div>
+    <div class="blush blush-left"></div>
+    <div class="blush blush-right"></div>
+    <div class="whisker whisker-left-1" style="--angle:-5deg;"></div>
+    <div class="whisker whisker-left-2" style="--angle:5deg;"></div>
+    <div class="whisker whisker-right-1" style="--angle:5deg;"></div>
+    <div class="whisker whisker-right-2" style="--angle:-5deg;"></div>
 
-            <div class="kitty-eye eye-left"></div>
-            <div class="kitty-eye eye-right"></div>
-            <div class="kitty-nose"></div>
-            <div class="kitty-mouth"></div>
-
-            <div class="blush blush-left"></div>
-            <div class="blush blush-right"></div>
-
-            <div class="whisker whisker-left-1" style="--angle:-5deg;"></div>
-            <div class="whisker whisker-left-2" style="--angle:5deg;"></div>
-            <div class="whisker whisker-right-1" style="--angle:5deg;"></div>
-            <div class="whisker whisker-right-2" style="--angle:-5deg;"></div>
-
-            <div class="kitty-bow">
-                <div class="bow-left"></div>
-                <div class="bow-right"></div>
-                <div class="bow-circle"></div>
-            </div>
-        </div>
-
-        <h1>Happy 17th Birthday, Sabhyata 🎀</h1>
-        <div class="sub">You’re the cutest part of my world.</div>
-        <div class="age-tag">Level 17 ✨</div>
-
-        <!-- Countdown -->
-        <div class="countdown-box" id="countdown">Loading countdown…</div>
-
-        <!-- Gallery -->
-        <div class="gallery">
-            <img src="photo1.jpg" alt="Photo 1">
-            <img src="photo2.jpg" alt="Photo 2">
-            <img src="photo3.jpg" alt="Photo 3">
-            <img src="photo4.jpg" alt="Photo 4">
-        </div>
-
-        <!-- Love note -->
-        <div class="love-note" id="loveNote">
-            I love you, Sabhyata. More than words, more than anything. 💗
-        </div>
-
-        <button class="btn" id="revealBtn">Tap for a surprise 💕</button>
-
-        <div class="letter-box" id="openLetter">
-            💌 Tap to open your letter
-        </div>
-
-        <div class="letter-popup" id="letterPopup">
-        <div class="letter-content" id="letterContent">
-        <!-- YOUR LETTER GOES HERE -->
-        <p>
-        My dearest Sabhyata,<br>
-
-        Good morning, wifey—or maybe I should say good night? The clock has just struck 00:00, which means the day has finally arrived! Today is not just any ordinary day—it’s the birthday of the most beautiful, cutest, and brightest star in my life. Yes, I’m talking about you, you adorable goof! It’s your birthday, and you are truly the person who lights up my world like nobody else ever could. This is your seventh birthday, but it’s the first time I get to celebrate it with you, and that makes it extra special for me. So, I thought to myself ,why not make it a grand celebration? That’s why I’ve gone all out this time and prepared a lot of surprises and gifts just for you, hoping to see that precious smile on your face.
-        But let’s be honest ,no matter how many gifts I give, it will never feel like enough because you deserve the world and more! My heart just wants to shower you with endless love and presents. Giving you things, writing you letters, and crafting thoughtful surprises ,that’s my love language. I find so much joy in expressing how much I cherish you through these little acts. This particular gift took a great deal of time and effort to create, but every second was worth it because it’s for you. I want all your birthdays to feel extra special, not just this one. I look forward to making each of your birthdays in the future even more memorable, so you always know how much you mean to me.
-        Call me possessive if you must, but I can’t help wanting to make you feel cherished and loved every single day, especially today. You’re not just my girlfriend—you’re my wifey, my best friend, and my lucky charm. Out of the 8 billion people in this world, I truly believe I’ve found the best, most wonderful girl. Your beauty is unmatched, and your voice , ah, it’s like music to my ears; kisses to the chef for that! Your sweetness, your laughter, and your warmth make my world so much brighter. I can’t wait to see what this year brings for you and for us together. Happy birthday, my love! Here’s to making countless more memories, sharing more laughter, and celebrating many more birthdays side by side.
-        Well no one likes long boring letters on their birthday , so lets leave it here.  Happy birthday, may this day and the countless before you bring you nothing but joy , food and happiness.
-        And well please don’t leave me , love you smm can’t wait for the day , when I get to organise your birthday on a trip with both of our families… and record a video of you cutting the cake and opening the presents I prepared but getting shocked on each one.
-        And see the brightest smile on your face.
-        From , a boy who loves you  - Aniket.
-        </p>
+    <div class="kitty-bow">
+        <div class="bow-left"></div>
+        <div class="bow-right"></div>
+        <div class="bow-circle"></div>
     </div>
+</div>
 
+<h1>Happy 17th Birthday, Sabhyata 🎀</h1>
+<div class="sub">You’re the cutest part of my world.</div>
+<div class="age-tag">Level 17 ✨</div>
+
+<!-- Countdown -->
+<div class="countdown-box" id="countdown">Loading countdown…</div>
+
+<!-- Gallery -->
+<div class="gallery">
+    <img src="photo1.jpg" alt="Photo 1">
+    <img src="photo2.jpg" alt="Photo 2">
+    <img src="photo3.jpg" alt="Photo 3">
+    <img src="photo4.jpg" alt="Photo 4">
+</div>
+
+<!-- Love note -->
+<div class="love-note" id="loveNote">
+    I love you, Sabhyata. More than words, more than anything. 💗
+</div>
+
+<button class="btn" id="revealBtn">Tap for a surprise 💕</button>
+
+<div class="letter-box" id="openLetter">
+    💌 Tap to open your letter
+</div>
+
+<div class="letter-popup" id="letterPopup">
+    <div class="letter-content" id="letterContent">
+
+<p>
+My dearest Sabhyata,<br>
+Good morning, wifey—or maybe I should say good night? The clock has just struck 00:00, which means the day has finally arrived! Today is not just any ordinary day—it’s the birthday of the most beautiful, cutest, and brightest star in my life. Yes, I’m talking about you, you adorable goof! It’s your birthday, and you are truly the person who lights up my world like nobody else ever could. This is your seventh birthday, but it’s the first time I get to celebrate it with you, and that makes it extra special for me. So, I thought to myself ,why not make it a grand celebration? That’s why I’ve gone all out this time and prepared a lot of surprises and gifts just for you, hoping to see that precious smile on your face.
+
+But let’s be honest ,no matter how many gifts I give, it will never feel like enough because you deserve the world and more! My heart just wants to shower you with endless love and presents. Giving you things, writing you letters, and crafting thoughtful surprises ,that’s my love language. I find so much joy in expressing how much I cherish you through these little acts. This particular gift took a great deal of time and effort to create, but every second was worth it because it’s for you. I want all your birthdays to feel extra special, not just this one. I look forward to making each of your birthdays in the future even more memorable, so you always know how much you mean to me.
+
+Call me possessive if you must, but I can’t help wanting to make you feel cherished and loved every single day, especially today. You’re not just my girlfriend—you’re my wifey, my best friend, and my lucky charm. Out of the 8 billion people in this world, I truly believe I’ve found the best, most wonderful girl. Your beauty is unmatched, and your voice , ah, it’s like music to my ears; kisses to the chef for that! Your sweetness, your laughter, and your warmth make my world so much brighter. I can’t wait to see what this year brings for you and for us together. Happy birthday, my love! Here’s to making countless more memories, sharing more laughter, and celebrating many more birthdays side by side.
+
+Well no one likes long boring letters on their birthday , so lets leave it here. Happy birthday, may this day and the countless before you bring you nothing but joy , food and happiness.
+
+And well please don’t leave me , love you smm can’t wait for the day , when I get to organise your birthday on a trip with both of our families… and record a video of you cutting the cake and opening the presents I prepared but getting shocked on each one.
+
+And see the brightest smile on your face.
+
+From , a boy who loves you - Aniket.
+</p>
+
+    </div>
     <button class="close-letter" id="closeLetter">Close</button>
 </div>
 
+<div class="footer">
+    Made just for you
+    <div class="from">— Aniket</div>
+</div>
 
-        <div class="footer">
-            Made just for you
-            <div class="from">— Aniket</div>
-        </div>
-    </div>
+</div>
 
-    <!-- Music -->
-    <audio id="bgMusic" loop>
-        <source src="salor.mp3" type="audio/mpeg">
-    </audio>
+<!-- Music -->
+<audio id="bgMusic" loop>
+    <source src="salor.mp3" type="audio/mpeg">
+</audio>
 
-    <script>
-        // Run after DOM is ready
-        window.addEventListener("DOMContentLoaded", () => {
-            const btn = document.getElementById("revealBtn");
-            const love = document.getElementById("loveNote");
-            const music = document.getElementById("bgMusic");
-            const countdownEl = document.getElementById("countdown");
+<script>
+window.addEventListener("DOMContentLoaded", () => {
 
-            const openLetter = document.getElementById("openLetter");
-            const letterPopup = document.getElementById("letterPopup");
-            const letterContent = document.getElementById("letterContent");
-            const closeLetter = document.getElementById("closeLetter");
+    const btn = document.getElementById("revealBtn");
+    const love = document.getElementById("loveNote");
+    const music = document.getElementById("bgMusic");
+    const countdownEl = document.getElementById("countdown");
+    const openLetter = document.getElementById("openLetter");
+const letterPopup = document.getElementById("letterPopup");
+const closeLetter = document.getElementById("closeLetter");
 
-            // Start music on first interaction anywhere
-            let musicStarted = false;
-            function startMusic() {
-                if (!musicStarted) {
-                    music.play().catch(() => {});
-                    musicStarted = true;
-                }
-            }
-            document.addEventListener("click", startMusic);
-            document.addEventListener("touchstart", startMusic);
+// --- MOBILE‑SAFE MUSIC AUTOSTART ---
+let musicStarted = false;
 
-            // Heart trail
-            function createHeart(x, y) {
-                const heart = document.createElement("div");
-                heart.className = "trail-heart";
-                heart.textContent = Math.random() > 0.5 ? "💗" : "💙";
-                heart.style.left = x + "px";
-                heart.style.top = y + "px";
-                document.body.appendChild(heart);
-                setTimeout(() => heart.remove(), 1000);
-            }
+function startMusicOnce() {
+    if (musicStarted) return;
+    musicStarted = true;
 
-            function handlePointer(e) {
-                const x = e.clientX || (e.touches && e.touches[0].clientX);
-                const y = e.clientY || (e.touches && e.touches[0].clientY);
-                if (x != null && y != null) createHeart(x, y);
-            }
+    music.load(); // required for iOS Safari
+    music.play().catch(() => {});
 
-            document.addEventListener("click", handlePointer);
-            document.addEventListener("touchstart", handlePointer);
+    document.removeEventListener("touchstart", startMusicOnce);
+    document.removeEventListener("click", startMusicOnce);
+}
 
-            // Whisker wiggle on tap
-            function wiggleWhiskers() {
-                document.querySelectorAll(".whisker").forEach(w => {
-                    w.classList.add("wiggle");
-                    setTimeout(() => w.classList.remove("wiggle"), 500);
-                });
-            }
-            document.addEventListener("click", wiggleWhiskers);
-            document.addEventListener("touchstart", wiggleWhiskers);
+document.addEventListener("touchstart", startMusicOnce, { once: true });
+document.addEventListener("click", startMusicOnce, { once: true });
 
-            // Button: reveal love note + heart burst
-            btn.addEventListener("click", () => {
-                love.classList.add("show");
-                const rect = btn.getBoundingClientRect();
-                for (let i = 0; i < 8; i++) {
-                    const hx = rect.left + rect.width / 2 + (Math.random() * 80 - 40);
-                    const hy = rect.top + rect.height / 2 + (Math.random() * 40 - 20);
-                    createHeart(hx, hy);
-                }
-            });
+// --- HEART TRAIL ---
+function createHeart(x, y) {
+    const heart = document.createElement("div");
+    heart.className = "trail-heart";
+    heart.textContent = Math.random() > 0.5 ? "💗" : "💙";
+    heart.style.left = x + "px";
+    heart.style.top = y + "px";
+    document.body.appendChild(heart);
+    setTimeout(() => heart.remove(), 1000);
+}
 
-            // Letter open
-            // Open letter (offline version)
-                openLetter.addEventListener("click", () => {
-                    letterPopup.style.display = "flex";
-                });
+function handlePointer(e) {
+    const x = e.clientX || (e.touches && e.touches[0].clientX);
+    const y = e.clientY || (e.touches && e.touches[0].clientY);
+    if (x != null && y != null) createHeart(x, y);
+}
 
-                // Close letter
-                closeLetter.addEventListener("click", () => {
-                    letterPopup.style.display = "none";
-                });
+document.addEventListener("click", handlePointer);
+document.addEventListener("touchstart", handlePointer);
 
-            // Letter close
-            closeLetter.addEventListener("click", () => {
-                letterPopup.style.display = "none";
-            });
+// --- WHISKER WIGGLE ---
+function wiggleWhiskers() {
+    document.querySelectorAll(".whisker").forEach(w => {
+        w.classList.add("wiggle");
+        setTimeout(() => w.classList.remove("wiggle"), 500);
+    });
+}
 
-            // Countdown
-            function updateCountdown() {
-                const target = new Date("January 31, 2026 00:00:00").getTime();
-                const now = new Date().getTime();
-                const diff = target - now;
+document.addEventListener("click", wiggleWhiskers);
+document.addEventListener("touchstart", wiggleWhiskers);
 
-                if (diff <= 0) {
-                    countdownEl.innerHTML = "It's your birthday today! 🎉💗";
-                    return;
-                }
+// --- LOVE NOTE REVEAL ---
+btn.addEventListener("click", () => {
+    love.classList.add("show");
 
-                const d = Math.floor(diff / (1000 * 60 * 60 * 24));
-                const h = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                const m = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-                const s = Math.floor((diff % (1000 * 60)) / 1000);
+    const rect = btn.getBoundingClientRect();
+    for (let i = 0; i < 8; i++) {
+        const hx = rect.left + rect.width / 2 + (Math.random() * 80 - 40);
+        const hy = rect.top + rect.height / 2 + (Math.random() * 40 - 20);
+        createHeart(hx, hy);
+    }
+});
 
-                countdownEl.innerHTML = `${d}d ${h}h ${m}m ${s}s until your big day 🎀`;
-            }
+// --- LETTER POPUP ---
+openLetter.addEventListener("click", () => {
+    letterPopup.style.display = "flex";
+});
 
-            updateCountdown();
-            setInterval(updateCountdown, 1000);
-        });
-    </script>
+closeLetter.addEventListener("click", () => {
+    letterPopup.style.display = "none";
+});
 
-</body>
-</html>
+// --- COUNTDOWN ---
+function updateCountdown() {
+    const target = new Date("January 31, 2026 00:00:00").getTime();
+    const now = new Date().getTime();
+    const diff = target - now;
+
+    if (diff <= 0) {
+        countdownEl.innerHTML = "It's your birthday today! 🎉💗";
+        return;
+    }
+
+    const d = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const h = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const m = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+    const s = Math.floor((diff % (1000 * 60)) / 1000);
+
+    countdownEl.innerHTML = `${d}d ${h}h ${m}m ${s}s until your big day 🎀`;
+}
+
+updateCountdown();
+setInterval(updateCountdown, 1000);
+
+});
+</script>
